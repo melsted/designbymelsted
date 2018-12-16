@@ -2,6 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
+		<!--Viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--Forfatter og beskrivelse-->
 	<meta name="author" content="Louise Melsted, Design by Melsted">
 	<meta name="description" content="Portfolio of Louise Melsted of Copenhagen">
@@ -11,8 +13,43 @@
 	<link href="stylesheet-forside.css" rel="stylesheet">
 		<!--Sidetitel-->
 	<title>Portfolio af Louise Melsted</title>
+		<!--load af jquerybibliotek-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<!--JavaScript til søgefunktionen i søgeknappen-->
+	<script>
+		// Åbner søge menuen når man trykker på kassen & billedet, og lukker menuen når man trykker vilkårigt sted.
+			window.onclick = function(event) {
+				// console.log(event.target.id)	
+				if(event.target.className !== 'searchbox'){
+					if(event.target.className === 'search-lup'){
+						document.getElementById("searchfield").classList.toggle("show");	
+					}
+				}
+			}
+	</script>
 </head>
 
 <body>
+	<!--Hovednavigation-->
+	<nav class="navigation">
+		<a href="#">Hjem</a>
+		<a href="sider-og-stylesheets/projekter.html">Projekter</a>
+		<a href="sider-og-stylesheets/ommig.html">Om Mig</a>
+		<a href="sider-og-stylesheets/kontakt.html">Kontakt</a>
+		<!--Søgefelt-->
+		
+		<div class="searchfunction">
+        		<button class="lup-picturebox search-lup" >
+					<img src="dokumenter/ikon-forstørrelsesglas.png" alt="søgeknap" class="search-lup">
+				</button>
+        		<div id="searchfield" class="searchfield">
+          			<form class="search-form">
+            			<input class="searchbox" type="text" placeholder="Søg her">
+            			<button class="searchbox">Søg</button>
+          			</form>
+        		</div>
+      		</div>
+		
+	</nav>
 </body>
 </html>
