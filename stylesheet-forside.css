@@ -12,10 +12,17 @@
 }
 
 /*Generel styling*/
+	.branding{
+		width: inherit;
+		display: inline-flex;
+	}
 	.cph-type{
 		font-family: raleway, sans-serif;
 		font-style: normal;
 		font-size: 31;
+	}
+	nav{
+		display: none;
 	}
 
 /*Styling af søgefunktionen*/
@@ -88,3 +95,24 @@
 		margin-right: 8px;
 	}
 /*Generel styling slut*/
+
+/*Desktop version - det vil sige over 1600 px*/
+@media screen and (min-width: 1600px){
+	
+}
+/*Laptop version - det vil sige under 1600 px*/
+@media screen and (max-width: 1600px){
+	
+}
+/*Landscape version - det vil sige under 1024 px*/
+@media screen and (max-width: 1024px){
+	
+}
+/*Tablet version - det vil sige under 768 px*/
+@media screen and (max-width: 768px){
+	
+}
+/*SmartPhone version - det vil sige under 480 px*/
+@media screen and (max-width: 480px){
+	
+}
