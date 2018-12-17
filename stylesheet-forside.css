@@ -17,21 +17,25 @@
 		display: inline-flex;
 	}
 	.logo{
-		width: 18%;
-		height: 18%;
+		width: 45px;
+		height: 55px;
+		position: absolute;
+		left: 1%;
+		top: 1%;
 	}
 	.cph-type{
 		font-family: raleway, sans-serif;
 		font-size: 0.8125em; /*13px/16px = 0,8125em*/
-		margin-top: 10%;
-		margin-left: 5%;
+		margin-top: 4%;
+		margin-left: 12.5%;
+		position: absolute;
+	}
+	header{
+		width: 100vw;
 	}
 	nav{
 		display: none;
 	}
-.burgernavigation{
-	display: contents;
-}
 
 /*Burgermenu*/
 	.burgerikon{
@@ -43,15 +47,13 @@
 		padding: 0;
 		border: none;
 		margin: 0;
-		width: 10vw;
-		height: 5vh;
+		width: 50px;
+		height: 35px;
 	}
 	.burgermenu{
 		float: right;
     	position: relative;
-    	right: 3vw;
-		top: 5vh;
-		
+		top: 2vh;
 	}
 	.burger-content{
 		display: none;
@@ -66,7 +68,7 @@
 		color: #414040;
 		padding: 12px 16px;
 		display: block;
-		float: right; /*OVERVEJ - SER MULIGVIS DUMT UD!*/
+		/*Overvej float:right*/
 	}
 	.burger-content a:hover{
 		Background-color: rgba(83, 82, 82, 0.3); 
@@ -80,8 +82,7 @@
 	.lup-picturebox {
     	background-color: white;
     	border: none;
-    	margin-top: 20px;
-    	margin-right: 10px;
+    	margin-top: 2vh;
 		outline: none;
 	}
 	.lup-picturebox:hover, .lup-picturebox:focus {
@@ -90,7 +91,7 @@
 	.searchfunction {
     	float: right;
     	position: relative;
-    	display: inline-block;
+    	display: inline;
 	}
 	.searchfield {
     	display: none;
@@ -116,10 +117,9 @@
 
 	/*Styling af søgefunktionsknappen - tip: det er den som indeholder et forstørrelsesglas */
 	.search-lup {
-    	width: auto;
-    	height: 38px;
+    	width: 35px;
+    	height: auto;
     	float: right;
-    	margin-right: 5px;
 	}
 
 	/*Styling af søgefeltet og søgknappen*/
@@ -146,7 +146,7 @@
 	}
 
 /*Desktop version - det vil sige over 1600 px*/
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1601px){
 	body{
 		background-image: url("images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
@@ -154,7 +154,7 @@
 	}
 }
 /*Laptop version - det vil sige under 1600 px*/
-@media screen and (max-width: 1600px){
+@media screen and (min-width: 1023px) and (max-width: 1600px){
 	body{
 		background-image: url("images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
@@ -162,29 +162,63 @@
 	}
 }
 /*Landscape version - det vil sige under 1024 px*/
-@media screen and (max-width: 1024px){
+@media screen and (min-width:767px) and (max-width: 1024px){
 	body{
 		background-image: url("images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: right down;
 	}
+	nav{
+		display: contents;
+	}
+	.soegefelt{
+		display: contents;
+	}
+	/*Tilpasning af søgefunktionens lup-ikon til tablet*/
+	.lup-picturebox{
+		
+	}
 }
-/*Tablet version - det vil sige under 768 px*/
-@media screen and (max-width: 768px){
+/*Tablet version - det vil sige under 768 px men over 480 px*/
+@media screen and (min-width: 480px) and (max-width: 768px){
+	/*Indsættelse af baggrund og tilpasning*/
 	body{
 		background-image: url("images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: right down;
 	}
+	/*Synliggør burgermenu og søgefelt*/
+	.burgernavigation{
+		display: contents;
+	}
+	.soegefelt{
+		display: contents;
+	}
+	/*Tilpasning af positioneringen af burgermenuen, søgefeltet og logotypen(cph-type)*/
+	.cph-type{
+		margin-top: 3.5%;
+	}
+	.lup-picturebox{
+		margin-top: 1vh;
+	}
+	.burgermenu{
+		top: 1.5vh;
+	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
-@media screen and (max-width: 480px){
+@media screen and (max-width: 479px){
+	/*Indsættelse af baggrund og styling til ingen gentagelser*/
 	body{
 		background-image: url("images/baggrunde/iphone-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: right down;
 	}
+	/*Synliggør burgermenu og søgefunktion*/
 	.burgernavigation{
 		display: contents;
 	}
+	.soegefelt{
+		display: contents;
+	}
+	/*Der behøves ikke yderligere css koder til SmartPhone versionen da jeg har designet Mobile First som default*/
 }
