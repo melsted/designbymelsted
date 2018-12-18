@@ -78,7 +78,7 @@
 		/*Overvej float:right*/
 	}
 	.burger-content a:hover{
-		Background-color: rgba(83, 82, 82, 0.3); 
+		background-color: rgba(131, 0, 0, 0.3); 
 	}
 	.burgermenu:hover .burger-content{
 		display:inline-block;
@@ -508,6 +508,16 @@
 	.soegefelt{
 		display: contents;
 	}
+	/*Justering og styling af burgermenu og søgefelt*/
+	.lup-picturebox:hover, .burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
+	.lup-picturebox{
+		width: inherit;
+	}
+	.burgermenu{
+		right: 2vw;
+	}
 	/*usynliggør streg og subnavigation*/
 	.streg{
 		display: none;
@@ -553,9 +563,14 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.5vh;
+		width: inherit;
 	}
 	.burgermenu{
 		top: 1vh;
+		right: 2vw;
+	}
+	.lup-picturebox:hover, .burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
 	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
@@ -583,5 +598,14 @@
 	.subnavigation{
 		display: none;
 	}
-	/*Der behøves ikke yderligere css koder til SmartPhone versionen da jeg har designet Mobile First som default*/
+	/*Justering og styling af burgermenu og søgefelt*/
+	.lup-picturebox:hover, .burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
+	.lup-picturebox{
+		width: inherit;
+	}
+	.burgermenu{
+		right: 2vw;
+	}
 }

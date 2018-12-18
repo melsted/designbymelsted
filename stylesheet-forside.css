@@ -464,19 +464,22 @@
 		top: 4.4vh;
 	}
 	/*Slideshow */
-	.landslide { 
+	.laptopslide { 
 		display: contents;
     	position: relative;
+    	width: 70vw;
+    	height: 100vh;
 		overflow: hidden;
 	}
-	.landpicture {
+	.laptoppicture {
     	width: 100vw;
-    	height: 87vh;
+    	height: 89vh;
+    	display: block;
 	}
-	.landslide > div {
+	.laptopslide > div {
    		position: absolute;
-		width: 100vw;
-		height: 87vh;
+   		width: 70vw;
+		top: 10.7vh;
 	}
 }
 /*Landscape version one - det vil sige under 808 px*/
@@ -544,16 +547,19 @@
 	.landslide { 
 		display: contents;
     	position: relative;
+		width: 70vw;
+		height: 100vh;
 		overflow: hidden;
 	}
 	.landpicture {
     	width: 100vw;
-    	height: 87vh;
+    	height: 89vh;
+		display: block;
 	}
 	.landslide > div {
    		position: absolute;
-		width: 100vw;
-		height: 87vh;
+		width: 70vw;
+		top: 11vh;
 	}
 }
 /*Tablet version - det vil sige under 768 px men over 576 px*/
@@ -589,16 +595,33 @@
 	/*Slideshow*/
 	.tabslide { 
 		display: contents;
-    	position: absolute;
+    	position: relative;
+		width: 70vw;
+		height: 100vh;
 		overflow: hidden;
 	}
 	.tabpicture {
     	width: 98vw;
-    	height: 86vh;
+    	height: 88vh;
+		display: block;
 		margin-left: 1vw;
 	}
 	.tabslide > div {
    		position: absolute;
+		width: 70vw;
+		top: 11vh;
+	}
+	/*Justering af positionering af burgermenu og søgefelt*/
+	.lup-picturebox{
+		margin-top: 1vh;
+		width: inherit;
+	}
+	.lup-picturebox:hover, .burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
+	.burgermenu{
+		top: 1vh;
+		right: 2vw;
 	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
@@ -633,23 +656,33 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.5vh;
+		width: inherit;
 	}
 	.burgermenu{
 		top: 1vh;
+		right: 2vw;
+	}
+	.lup-picturebox:hover, .burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
 	}
 	/*Slideshow*/
 	.tabslide { 
 		display: contents;
-    	position: absolute;
+    	position: relative;
+		width: 70vw;
+		height: 100vh;
 		overflow: hidden;
 	}
 	.tabpicture {
-    	width: 96vw;
-    	height: 86vh;
-		margin-left: 1.5vw;
+    	width: 98vw;
+    	height: 88vh;
+		display: block;
+		margin-left: 1vw;
 	}
 	.tabslide > div {
    		position: absolute;
+		width: 70vw;
+		top: 11vh;
 	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
@@ -678,28 +711,35 @@
 		display: none;
 	}
 	/*Slideshow*/
-	.smartslide{
+	.smartslide { 
 		display: contents;
-		position: absolute;
+    	position: relative;
+		width: 70vw;
+		height: 100vh;
 		overflow: hidden;
-		width: 90vw;
 	}
 	.smartpicture {
-    	width: 95vw;
-    	height: 85vh;
-		margin-left: 1.5vw;
-		
+    	width: 98vw;
+    	height: 88vh;
+		display: block;
+		margin-left: 1vw;
 	}
 	.smartslide > div {
    		position: absolute;
-		width: 90vw;
+		width: 70vw;
+		top: 11vh;
 	}
 	/*Burgermenu og søgefunktion*/
 	.lup-picturebox{
 		margin-right: 5vw;
 		margin-top: 0.5vh;
+		width: inherit;
 	}
 	.burgermenu{
 		top: 1vh;
+		right: 2vw;
+	}
+	.lup-picturebox:hover, .burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
 	}
 }
