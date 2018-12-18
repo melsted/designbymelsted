@@ -154,6 +154,7 @@
 		background-image: url("images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: right down;
+		background-size: 1220px 580px;
 	}
 	nav{
 		display: inline-flex;
@@ -186,18 +187,16 @@
 		padding-right: 1vw;
 		border-right: 1px solid #717070;
 	}
-	header{
-		border-bottom: 1px solid #717070;
-		width: 100vw;
-		height: 11vh;
-	}
 }
 /*Laptop version - det vil sige under 1600 px*/
 @media screen and (min-width: 1023px) and (max-width: 1600px){
 	body{
 		background-image: url("images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
-		background-position: right down;
+		background-position: bottom left;
+		background-size: 1220px 580px;
+		width: 100vw;
+		height: 100vh;
 	}
 	nav{
 		display: inline-flex;
@@ -230,18 +229,16 @@
 		padding-right: 1vw;
 		border-right: 1px solid #717070;
 	}
-	header{
-		border-bottom: 1px solid #717070;
-		width: 100vw;
-		height: 11vh;
-	}
 }
 /*Landscape version - det vil sige under 1024 px*/
 @media screen and (min-width:769px) and (max-width: 1024px){
 	body{
 		background-image: url("images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
-		background-position: right down;
+		background-position: bottom left;
+		background-size: 650px 508px;
+		width: 100vw;
+		height: 100vh;
 	}
 	nav{
 		display: inline-flex;
@@ -273,11 +270,6 @@
 		padding-right: 1vw;
 		border-right: 1px solid #717070;
 	}
-	header{
-		border-bottom: 1px solid #717070;
-		width: 100vw;
-		height: 11vh;
-	}
 }
 /*Tablet version - det vil sige under 768 px men over 576 px*/
 @media screen and (min-width: 576px) and (max-width: 768px){
@@ -285,7 +277,10 @@
 	body{
 		background-image: url("images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
-		background-position: right down;
+		background-position: bottom left;
+		background-size: 600px 508px;
+		width: 100vw;
+		height: 100vh;
 	}
 	/*Synliggør burgermenu og søgefelt*/
 	.burgernavigation{
@@ -306,7 +301,10 @@
 	body{
 		background-image: url("images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
-		background-position: right down;
+		background-position: bottom left;
+		background-size: 450px 508px;
+		width: 100vw;
+		height: 100vh;
 	}
 	/*Synliggør burgermenu og søgefelt*/
 	.burgernavigation{
@@ -333,7 +331,10 @@
 	body{
 		background-image: url("images/baggrunde/iphone-baggrund.jpg");
 		background-repeat: no-repeat;
-		background-position: right down;
+		background-position: bottom left;
+		background-size: 400px 500px;
+		width: 100vw;
+		height: 100vh;
 	}
 	/*Synliggør burgermenu og søgefunktion*/
 	.burgernavigation{

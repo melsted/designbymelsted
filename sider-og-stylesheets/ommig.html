@@ -2,20 +2,85 @@
 <html>
 <head>
 	<meta charset="utf-8">
+		<!--Viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Forfatter og beskrivelse-->
+	<meta name="author" content="Louise Melsted, Design by Melsted">
+	<meta name="description" content="Portfolio of Louise Melsted of Copenhagen">
+		<!--7 ord/sætninger, som kan bruges til at identificere og fremsøge portfolioen-->
+	<meta name="keywords" content="Louise Melsted, Design by Melsted, multimediedesigner, front-end developer, content developer, Copenhagen">
+		<!--stylesheet reference og relation-->
 	<link href="ommig-stylesheet.css" rel="stylesheet">
+		<!--Sidetitel-->
 	<title>Portfolio af Louise Melsted</title>
+		
+		<!--JavaScript til søgefunktionen i søgeknappen-->
+	<script>
+		// Åbner søge menuen ved første klik og lukker menuen ved andet klik.
+			window.onclick = function(event) {
+			// console.log(event.target.id)	
+			if(event.target.className !== 'searchbox'){
+			if(event.target.className === 'search-lup'){
+				document.getElementById("searchfield").classList.toggle("show");	
+			}
+			}
+			}		
+	</script>
+	
 </head>
 
 <body>
+<header>
+	<!--Logo/Branding-->
+	<div class="branding">
+		<img src="tidligere-projekter/portfolio/logo-01-2-transparant.png" alt="logo" class="logo"/>
+		<p class="cph-type">Louise Melsted <br>of Copenhagen</p>
+	</div>
 	
-	<!--Navigation til undersider-->
+	<!--Hovednavigation-->
 	<nav>
-		<a href="udvikling-portfolio.html">Portfolio opbygning</a>
-		<a href="branding.html">Branding</a>
-		<a href="fotografier.html">Fotografier</a>
-		<a href="applikationer.html">Applikationer</a>
-		<a href="online-løsninger.html">Online Løsninger</a>
+		<a href="#">Hjem</a>
+		<a href="sider-og-stylesheets/projekter.html">Projekter</a>
+		<a href="sider-og-stylesheets/ommig.html">Om Mig</a>
+		<a href="sider-og-stylesheets/kontakt.html">Kontakt</a>
 	</nav>
 	
+		<!--Søgefelt-->
+	<div class="soegefelt">
+		
+		<div class="searchfunction">
+        <button class="lup-picturebox search-lup" >
+			<img src="dokumenter/ikon-forstørrelsesglas.png" alt="søgeknap" class="search-lup">
+		</button>
+        <div id="searchfield" class="searchfield">
+			<!--form blive nødt til at være der, for at søgeknappen virker-->
+        <form class="search-form">
+            <input class="searchbox" id="searchtext" type="text" placeholder="Indtast søgeord her">
+			<button class="searchbox" id="search-button" onclick="click()">Søg</button>
+        </form>
+        </div>
+      	</div>	
+	</div>
+	<div class="burgernavigation">
+		<div class="burgermenu">
+			<button class="burger-button">
+				<img src="dokumenter/ikon-burgermenu.png" alt="burgermenu" class="burgerikon"/>
+			</button>
+		<div class="burger-content">
+			<a href="#">Hjem</a>
+			<a href="sider-og-stylesheets/projekter.html">Projekter</a>
+			<a href="sider-og-stylesheets/ommig.html">Om Mig</a>
+			<a href="sider-og-stylesheets/kontakt.html">Kontakt</a>
+		</div>
+		</div>
+	</div>
+	
+	
+</header>
+
+<main>
+	
+</main>
+
 </body>
 </html>
