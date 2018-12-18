@@ -29,6 +29,10 @@
 		margin-top: 2.7vh;
 		margin-left: 12.5vw;
 		position: absolute;
+		color: #414040;
+	}
+	.cph-type:visited{
+		color: #414040;
 	}
 	header{
 		width: 100vw;

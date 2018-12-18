@@ -1,3 +1,351 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*Import af fonttyperne raleway og lato*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+/*Nulstilling*/
+*{
+	padding: 0;
+	border: none;
+	margin: 0;
+}
+
+/*Generel styling*/
+	.branding{
+		width: inherit;
+		display: inline-flex;
+	}
+	.logo{
+		width: 45px;
+		height: 55px;
+		position: absolute;
+		left: 1%;
+		top: 1%;
+	}
+	.cph-type{
+		font-family: raleway, sans-serif;
+		font-size: 0.8125em; /*13px/16px = 0,8125em*/
+		margin-top: 2.7vh;
+		margin-left: 12.5vw;
+		position: absolute;
+		color: #414040;
+	}
+	.cph-type:visited{
+		color: #414040;
+	}
+	header{
+		width: 100vw;
+	}
+	nav{
+		display: none;
+	}
+	.burgernavigation{
+		display: none;
+	}
+
+/*Burgermenu*/
+	.burgerikon{
+		width: inherit;
+		height: inherit;
+	}
+	.burger-button{
+		background-color: transparent;
+		padding: 0;
+		border: none;
+		margin: 0;
+		width: 50px;
+		height: 35px;
+	}
+	.burgermenu{
+		float: right;
+    	position: relative;
+		top: 2vh;
+	}
+	.burger-content{
+		display: none;
+		position: absolute; 
+		right: 0;
+		background-color: white;
+		min-width: 80px;
+		box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.3);
+		z-index: 1;
+	}
+	.burger-content a{
+		color: #414040;
+		padding: 12px 16px;
+		display: block;
+		/*Overvej float:right*/
+	}
+	.burger-content a:hover{
+		Background-color: rgba(83, 82, 82, 0.3); 
+	}
+	.burgermenu:hover .burger-content{
+		display:inline-block;
+	}
+	
+
+/*Styling af søgefunktionen*/
+	.lup-picturebox {
+    	background-color: white;
+    	border: none;
+    	margin-top: 2vh;
+		outline: none;
+	}
+	.lup-picturebox:hover, .lup-picturebox:focus {
+    	background-color: none;
+	}
+	.searchfunction {
+    	float: right;
+    	position: relative;
+    	display: inline;
+	}
+	.searchfield {
+    	display: none;
+    	position: absolute;
+    	top: 60px;
+    	min-width: 160px;
+    	overflow: auto;
+    	right: 0;
+    	z-index: 1;
+	}
+	.searchfield a {
+    	color: black;
+    	padding: 12px 16px;
+    	text-decoration: none;
+    	display: block;
+	}
+	.searchfunction a:hover {
+    	background-color: #ddd;
+	}
+	.show {
+    	display: block;
+	}
+
+	/*Styling af søgefunktionsknappen - tip: det er den som indeholder et forstørrelsesglas */
+	.search-lup {
+    	width: 35px;
+    	height: auto;
+    	float: right;
+	}
+
+	/*Styling af søgefeltet og søgknappen*/
+	.search-form {
+    	margin: 2px;
+    	float: right;    
+	    display: inline-flex;
+	}
+	input[type=text] {
+    	padding: 7px;
+    	outline: .5px solid grey;
+    	font-size: 16px;
+    	font-family: sans-serif;
+	}
+	.lup-picturebox, #search-button {
+    	float: right;
+    	color: black;
+    	border: none;
+    	border-radius: 3px;
+    	cursor: pointer;
+    	height: 36px;
+    	width: 60px;
+		margin-right: 8px;
+	}
+
+/*Desktop version - det vil sige over 1600 px*/
+@media screen and (min-width: 1280px){
+	body{
+		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
+		background-repeat: no-repeat;
+		background-position: right down;
+		background-size: 1220px 580px;
+	}
+	nav{
+		display: inline-flex;
+	}
+	.soegefelt{
+		display: inline-flex;
+		position: absolute;
+		float: right;
+		right: 1%;
+	}
+	/*Tilpasning af positioneringen af søgefeltet og logotypen(cph-type)*/
+	.cph-type{
+		margin-top: 2.7vh;
+		margin-left: 5vw;
+	}
+	.lup-picturebox{
+		margin-top: 0.2vh;
+		width: inherit;
+		margin-right: 4vw;
+	}
+	/*Styling af hovednavigationen*/
+	nav{
+		position: relative;
+		float: right;
+		right: 8vw;
+		top: 4vh;
+	}
+	nav a{
+		margin-right: 1vw;
+		padding-right: 1vw;
+		border-right: 1px solid #717070;
+	}
+}
+/*Laptop version - det vil sige under 1600 px*/
+@media screen and (min-width: 1023px) and (max-width: 1600px){
+	body{
+		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: 1220px 580px;
+		width: 100vw;
+		height: 100vh;
+	}
+	nav{
+		display: inline-flex;
+	}
+	.soegefelt{
+		display: inline-flex;
+		position: absolute;
+		float: right;
+		right: 1%;
+	}
+	/*Tilpasning af positioneringen af søgefeltet og logotypen(cph-type)*/
+	.cph-type{
+		margin-top: 2.7vh;
+		margin-left: 6vw;
+	}
+	.lup-picturebox{
+		margin-top: 0.2vh;
+		width: inherit;
+		margin-right: 3vw;
+	}
+	/*Styling af hovednavigationen*/
+	nav{
+		position: relative;
+		float: right;
+		right: 8vw;
+		top: 4vh;
+	}
+	nav a{
+		margin-right: 1vw;
+		padding-right: 1vw;
+		border-right: 1px solid #717070;
+	}
+}
+/*Landscape version - det vil sige under 1024 px*/
+@media screen and (min-width:769px) and (max-width: 1024px){
+	body{
+		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: 650px 508px;
+		width: 100vw;
+		height: 100vh;
+	}
+	nav{
+		display: inline-flex;
+	}
+	.soegefelt{
+		display: inline-flex;
+		position: absolute;
+		float: right;
+		right: 1%;
+	}
+	/*Tilpasning af positioneringen af søgefeltet og logotypen(cph-type)*/
+	.cph-type{
+		margin-top: 2.7vh;
+		margin-left: 7.5vw;
+	}
+	.lup-picturebox{
+		margin-top: 0.2vh;
+		width: 100%;
+	}
+	/*Styling af hovednavigationen*/
+	nav{
+		position: relative;
+		float: right;
+		right: 8vw;
+		top: 4vh;
+	}
+	nav a{
+		margin-right: 1vw;
+		padding-right: 1vw;
+		border-right: 1px solid #717070;
+	}
+}
+/*Tablet version - det vil sige under 768 px men over 576 px*/
+@media screen and (min-width: 576px) and (max-width: 768px){
+	/*Indsættelse af baggrund og tilpasning*/
+	body{
+		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: 600px 508px;
+		width: 100vw;
+		height: 100vh;
+	}
+	/*Synliggør burgermenu og søgefelt*/
+	.burgernavigation{
+		display: contents;
+	}
+	.soegefelt{
+		display: contents;
+	}
+	/*Tilpasning af positioneringen af burgermenuen, søgefeltet og logotypen(cph-type)*/
+	.cph-type{
+		margin-top: 2.7vh;
+		margin-left: 9.5vw;
+	}
+}
+/*Mini tablet version - det vil sige under 575 px men over 480 px*/
+@media screen and (min-width: 480px) and (max-width: 575px){
+	/*Indsættelse af baggrund og tilpasning*/
+	body{
+		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: 450px 508px;
+		width: 100vw;
+		height: 100vh;
+	}
+	/*Synliggør burgermenu og søgefelt*/
+	.burgernavigation{
+		display: contents;
+	}
+	.soegefelt{
+		display: contents;
+	}
+	/*Tilpasning af positioneringen af burgermenuen, søgefeltet og logotypen(cph-type)*/
+	.cph-type{
+		margin-top: 2.7vh;
+		margin-left: 11vw;
+	}
+	.lup-picturebox{
+		margin-top: 0.5vh;
+	}
+	.burgermenu{
+		top: 1vh;
+	}
+}
+/*SmartPhone version - det vil sige under 480 px*/
+@media screen and (max-width: 479px){
+	/*Indsættelse af baggrund og styling til ingen gentagelser*/
+	body{
+		background-image: url("../images/baggrunde/iphone-baggrund.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		background-size: 400px 500px;
+		width: 100vw;
+		height: 100vh;
+	}
+	/*Synliggør burgermenu og søgefunktion*/
+	.burgernavigation{
+		display: contents;
+	}
+	.soegefelt{
+		display: contents;
+	}
+	/*Der behøves ikke yderligere css koder til SmartPhone versionen da jeg har designet Mobile First som default*/
+}
