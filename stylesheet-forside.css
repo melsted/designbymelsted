@@ -11,6 +11,92 @@
 	margin: 0;
 }
 
+/*Slideshows kun gældende for index*/
+	/* Smartphone slideshow */
+	.smartslide { 
+    	position: relative;
+    	width: 70vw;
+    	height: 100vh;
+		overflow: hidden;
+		margin-left: 25%;
+		margin-bottom: 3%;
+		display:none;
+	}
+	/*Styling af billederne i styleshowet*/
+	.smartpicture {
+    	width: 70vw;
+    	height: 100vh;
+    	display: block;
+	}
+	/*Styling af de div elementer, som har slideshowets div som forældreelement*/
+	.smartslide > div {
+   		position: absolute;
+   		width: 70vw;
+		top: 13%;
+	}
+
+	/* Tablet slideshow */
+	.tabslide { 
+    	position: relative;
+    	width: 70vw;
+    	height: 100vh;
+		overflow: hidden;
+		margin-left: 25%;
+		margin-bottom: 3%;
+		display: none;
+	}
+	.tabpicture {
+    	width: 70vw;
+    	height: 100vh;
+    	display: block;
+	}
+	.tabslide > div {
+   		position: absolute;
+   		width: 70vw;
+		top: 13%;
+	}
+
+	/* Landscape tablets slideshow */
+	.landslide { 
+    	position: relative;
+    	width: 70vw;
+    	height: 100vh;
+		overflow: hidden;
+		margin-left: 25%;
+		margin-bottom: 3%;
+		display: none;
+	}
+	.landpicture {
+    	width: 70vw;
+    	height: 100vh;
+    	display: block;
+	}
+	.landslide > div {
+   		position: absolute;
+   		width: 70vw;
+		top: 13%;
+	}
+	/* Laptop slideshow*/
+	.laptopslide { 
+    	position: relative;
+    	width: 70vw;
+    	height: 100vh;
+		overflow: hidden;
+		margin-left: 25%;
+		margin-bottom: 3%;
+		display: none;
+	}
+	.laptoppicture {
+    	width: 70vw;
+    	height: 100vh;
+    	display: block;
+	}
+	.laptopslide > div {
+   		position: absolute;
+   		width: 70vw;
+		top: 13%;
+	}
+
 /*Generel styling*/
 	.branding{
 		width: inherit;
@@ -215,6 +301,24 @@
 		left: 1vw;
 		top: 4.3vh;
 	}
+	/* Laptop slideshow*/
+	.laptopslide { 
+		display: contents;
+    	position: relative;
+    	width: 70vw;
+    	height: 100vh;
+		overflow: hidden;
+	}
+	.laptoppicture {
+    	width: 100vw;
+    	height: 89vh;
+    	display: block;
+	}
+	.laptopslide > div {
+   		position: absolute;
+   		width: 70vw;
+		top: 10.7vh;
+	}
 }
 /*Laptop version - det vil sige under 1200 px*/
 @media screen and (min-width: 1025px) and (max-width: 1200px){
@@ -279,6 +383,24 @@
 		left: 1vw;
 		top: 4.3vh;
 	}
+	/* Laptop slideshow*/
+	.laptopslide { 
+		display: contents;
+    	position: relative;
+    	width: 70vw;
+    	height: 100vh;
+		overflow: hidden;
+	}
+	.laptoppicture {
+    	width: 100vw;
+    	height: 89vh;
+    	display: block;
+	}
+	.laptopslide > div {
+   		position: absolute;
+   		width: 70vw;
+		top: 10.7vh;
+	}
 }
 /*Landscape version two - det vil sige under 1024 px*/
 @media screen and (min-width:808px) and (max-width: 1024px){
@@ -340,6 +462,21 @@
 		display: flex;
 		left: 1vw;
 		top: 4.4vh;
+	}
+	/*Slideshow */
+	.landslide { 
+		display: contents;
+    	position: relative;
+		overflow: hidden;
+	}
+	.landpicture {
+    	width: 100vw;
+    	height: 87vh;
+	}
+	.landslide > div {
+   		position: absolute;
+		width: 100vw;
+		height: 87vh;
 	}
 }
 /*Landscape version one - det vil sige under 808 px*/
@@ -403,6 +540,21 @@
 		left: 1vw;
 		top: 4.4vh;
 	}
+	/*Slideshow */
+	.landslide { 
+		display: contents;
+    	position: relative;
+		overflow: hidden;
+	}
+	.landpicture {
+    	width: 100vw;
+    	height: 87vh;
+	}
+	.landslide > div {
+   		position: absolute;
+		width: 100vw;
+		height: 87vh;
+	}
 }
 /*Tablet version - det vil sige under 768 px men over 576 px*/
 @media screen and (min-width: 576px) and (max-width: 768px){
@@ -433,6 +585,20 @@
 	.cph-type{
 		margin-top: 2.7vh;
 		margin-left: 9.5vw;
+	}
+	/*Slideshow*/
+	.tabslide { 
+		display: contents;
+    	position: absolute;
+		overflow: hidden;
+	}
+	.tabpicture {
+    	width: 98vw;
+    	height: 86vh;
+		margin-left: 1vw;
+	}
+	.tabslide > div {
+   		position: absolute;
 	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
@@ -471,6 +637,20 @@
 	.burgermenu{
 		top: 1vh;
 	}
+	/*Slideshow*/
+	.tabslide { 
+		display: contents;
+    	position: absolute;
+		overflow: hidden;
+	}
+	.tabpicture {
+    	width: 96vw;
+    	height: 86vh;
+		margin-left: 1.5vw;
+	}
+	.tabslide > div {
+   		position: absolute;
+	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
 @media screen and (max-width: 479px){
@@ -497,5 +677,29 @@
 	.subnavigation{
 		display: none;
 	}
-	/*Der behøves ikke yderligere css koder til SmartPhone versionen da jeg har designet Mobile First som default*/
+	/*Slideshow*/
+	.smartslide{
+		display: contents;
+		position: absolute;
+		overflow: hidden;
+		width: 90vw;
+	}
+	.smartpicture {
+    	width: 95vw;
+    	height: 85vh;
+		margin-left: 1.5vw;
+		
+	}
+	.smartslide > div {
+   		position: absolute;
+		width: 90vw;
+	}
+	/*Burgermenu og søgefunktion*/
+	.lup-picturebox{
+		margin-right: 5vw;
+		margin-top: 0.5vh;
+	}
+	.burgermenu{
+		top: 1vh;
+	}
 }
