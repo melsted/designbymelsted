@@ -1,0 +1,157 @@
+@charset "utf-8";/*Nedennstående er kilde til fonttypen*/
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
+
+
+/*Body reset*/
+body{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+
+
+/*Headpiece*/
+#hp{
+	background: url(../images/menu.tryout5.png);
+	border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+	Position: absolute;
+	width: 98.7vw;
+	height: 25vh;
+}
+
+
+.h1-d{
+	font-family: 'Pinyon Script', serif;
+	text-shadow: 2px 3px 2px rgba(70, 70, 70, 0.8);
+	color: #414040;
+	font-size: 70px;
+	font-weight: 200;
+	position: absolute;
+		bottom: 58px;
+		left: 210px;
+	text-decoration: none;
+}
+
+.h1-bm{
+	font-family: 'Pinyon Script', serif;
+	text-shadow: 2px 3px 2px rgba(70, 70, 70, 0.8);
+	color: #414040;
+	font-size: 55px;
+	font-weight: 200;
+	position: absolute;
+		top: 68px;
+		left: 330px;
+	text-decoration: none;
+}
+
+/*navigation: menu*/
+nav{
+	font-family: 'PT Serif', serif;
+	font-size: 20px;
+	color: #414040;
+	position: absolute;
+	top: 100px;
+	Left: 850px;
+}
+.x{
+	text-shadow:2px 3px 2px rgba(70, 70, 70, 0.6);
+	text-decoration: none;
+}
+.contact{
+	border-left: 2px solid rgba(73, 73, 73, 0.5);
+}
+.navtext{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+a:visited{
+	color: #414040;
+}
+.x:hover{
+	font-weight: bold;
+}
+
+/*Drop-down-buttons*/
+.dropdown-button{
+	background-color: none;
+	color: #414040;
+	padding: none;
+	border: none;
+	border-left: 2px solid rgba(73, 73, 73, 0.5);
+}
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute; 
+	background-color: white;
+	min-width: 80px;
+	box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+.dropdown-content a{
+	color: #414040;
+	padding: 12px 16px;
+	text-decoration: underline;
+	display: block;  
+}
+.dropdown-content a:hover{
+	Background-color: rgba(83, 82, 82, 0.3); 
+}
+.dropdown:hover .dropdown-content{
+	display:inline-block;
+}
+.dropdown:hover .dropdown-button{
+	background-color: none;
+}
+
+/*---General closed-----------------------------------------------------------------------*/
+
+/*Picture*/
+#me{
+	position: relative;
+		top: 30vh;
+	width: 475px;
+	height: 700px;
+}
+
+/*div med paragrafferne louise melsted og louise@designbymelsted.dk*/
+.textboks{
+	margin-right: 0;
+	padding-right: 0;
+	border-right: none;
+}
+.p1{
+	font-family: 'PT Serif', serif;
+	font-size: 60px;
+	font-weight: bold;
+	color: #414040;
+	text-shadow: 1px 2px 1px rgba(87, 87, 87, 0.6);
+	Position: absolute;
+		left: 42vw;
+		top: 65vh;
+}
+.p2{
+	font-family: 'PT Serif', serif;
+	font-size: 50px;
+	color: #414040;
+	text-shadow: 1px 2px 1px rgba(87, 87, 87, 0.6);
+	Position: absolute;
+		left: 48vw;
+		top: 79vh;
+}
+
+/*All rights reserved*/
+Footer{
+	Width: 61vw;
+	height: 12vh;
+	border-top: 2px solid #414040;
+	Position: absolute;
+		left: 37vw;
+		top: 139vh;
+	text-align: right;
+}
