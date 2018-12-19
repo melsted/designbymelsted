@@ -152,12 +152,60 @@
 		margin-right: 8px;
 	}
 
+/*Styling af grid og indhold*/
+.overskrift{
+	font-family: lato, sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	color: #414040;
+	position: absolute;
+	left: 42%;
+	top: 20%;
+}
+.louise{
+	width: 20vw;
+	height: auto;
+	position: absolute;
+	right: 14%;
+	top: 40%;
+	z-index: 1;
+}
+.boks1{
+	width: 75vw;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.5);
+	dispay: inline-flex;
+	position: absolute;
+	right: 15%;
+	top: 35%;
+	margin-bottom: 2vh;
+}
+h2{
+	position: relative;
+	font-family: lato, sans-serif;
+	color: #414040;
+	top: 2.5%;
+	left: 2.5%;
+}
+.info, .liste, .biografi{
+	position: relative;
+	font-family: lato, sans-serif;
+	color: #414040;
+	top: 2.5%;
+	left: 2.5%;
+}
+.liste{
+	position: relative;
+	left: 7.5%;
+}
+
 /*Desktop version - det vil sige over 1600 px*/
 @media screen and (min-width: 1200px){
 		body{
 		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 1220px 580px;
 		width: 100vw;
 		height: 100vh;
@@ -179,7 +227,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: inherit;
-		margin-right: 3vw;
+		margin-right: 2vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -222,6 +270,7 @@
 		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 1220px 580px;
 		width: 100vw;
 		height: 100vh;
@@ -243,7 +292,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: inherit;
-		margin-right: 3vw;
+		margin-right: 2vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -279,6 +328,10 @@
 		left: 1vw;
 		top: 4.3vh;
 	}
+	/*Rettelse af indhold*/
+	.louise{
+		right: 10%;
+	}
 }
 /*Landscape version two - det vil sige under 1024 px*/
 @media screen and (min-width:808px) and (max-width: 1024px){
@@ -286,7 +339,8 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-attachment: fixed;
+		background-size: 650px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -306,6 +360,7 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.2vh;
+		margin-right: 0vw;
 		width: 100%;
 	}
 	.lup-picturebox:hover{
@@ -340,6 +395,10 @@
 		display: flex;
 		left: 1vw;
 		top: 4.4vh;
+	}
+	/*Rettelse af indhold*/
+	.louise{
+		display: none;
 	}
 }
 /*Landscape version one - det vil sige under 808 px*/
@@ -348,7 +407,8 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-attachment: fixed;
+		background-size: 650px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -368,6 +428,7 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.2vh;
+		margin-right: 0vw;
 		width: 100%;
 	}
 	.lup-picturebox:hover{
@@ -402,6 +463,10 @@
 		display: flex;
 		left: 1vw;
 		top: 4.4vh;
+	}
+	/*Rettelse af indhold*/
+	.louise{
+		display: none;
 	}
 }
 /*Tablet version - det vil sige under 768 px men over 576 px*/
@@ -411,7 +476,8 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 600px 508px;
+		background-attachment: fixed;
+		background-size: 600px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -428,6 +494,7 @@
 	}
 	.lup-picturebox{
 		width: inherit;
+		margin-right: 4vw;
 	}
 	.burgermenu{
 		right: 2vw;
@@ -444,6 +511,13 @@
 		margin-top: 2.7vh;
 		margin-left: 9.5vw;
 	}
+	/*Rettelse af indhold*/
+	.overskrift{
+		left: 40%;
+	}
+	.louise{
+		display: none;
+	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
 @media screen and (min-width: 480px) and (max-width: 575px){
@@ -452,7 +526,8 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 450px 508px;
+		background-attachment: fixed;
+		background-size: 450px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -478,6 +553,7 @@
 	.lup-picturebox{
 		margin-top: 0.5vh;
 		width: inherit;
+		margin-right: 4vw;
 	}
 	.burgermenu{
 		top: 1vh;
@@ -485,6 +561,13 @@
 	}
 	.lup-picturebox:hover, .burgermenu:hover{
 		background-color: rgba(131, 0, 0, 0.3);
+	}
+	/*Rettelse af indhold*/
+	.overskrift{
+		left: 35%;
+	}
+	.louise{
+		display: none;
 	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
@@ -494,6 +577,7 @@
 		background-image: url("../images/baggrunde/iphone-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 400px 500px;
 		width: 100vw;
 		height: 100vh;
@@ -518,8 +602,16 @@
 	}
 	.lup-picturebox{
 		width: inherit;
+		margin-right: 4vw;
 	}
 	.burgermenu{
 		right: 2vw;
+	}
+	/*Rettelse af indhold*/
+	.overskrift{
+		left: 35%;
+	}
+	.louise{
+		display: none;
 	}
 }
