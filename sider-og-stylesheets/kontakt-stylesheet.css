@@ -179,7 +179,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: inherit;
-		margin-right: 3vw;
+		margin-right: 2vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -243,7 +243,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: inherit;
-		margin-right: 3vw;
+		margin-right: 2vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -307,6 +307,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: 100%;
+		margin-right: 0vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -369,6 +370,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: 100%;
+		margin-right: 0vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -428,6 +430,7 @@
 	}
 	.lup-picturebox{
 		width: inherit;
+		margin-right: 4vw;
 	}
 	.burgermenu{
 		right: 2vw;
@@ -474,6 +477,7 @@
 	.lup-picturebox{
 		margin-top: 0.5vh;
 		width: inherit;
+		margin-right: 4vw;
 	}
 	.burgermenu{
 		top: 1vh;
@@ -514,6 +518,7 @@
 	}
 	.lup-picturebox{
 		width: inherit;
+		margin-right: 4vw;
 	}
 	.burgermenu{
 		right: 2vw;
