@@ -83,7 +83,6 @@
 	.burgermenu:hover .burger-content{
 		display:inline-block;
 	}
-	
 
 /*Styling af søgefunktionen*/
 	.lup-picturebox {
@@ -121,14 +120,12 @@
 	.show {
     	display: block;
 	}
-
 	/*Styling af søgefunktionsknappen - tip: det er den som indeholder et forstørrelsesglas */
 	.search-lup {
     	width: 35px;
     	height: auto;
     	float: right;
 	}
-
 	/*Styling af søgefeltet og søgknappen*/
 	.search-form {
     	margin: 2px;
@@ -151,6 +148,27 @@
     	width: 60px;
 		margin-right: 8px;
 	}
+
+/*Styling af indhold*/
+.overskrift{
+	font-family: lato, sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	color: #414040;
+	position: absolute;
+	left: 35%;
+	top: 20%;
+}
+.boks{
+	width: 75vw;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+}
+.skrift{
+	font-family: lato, sans-serif;
+	color: #414040;
+}
 
 /*Desktop version - det vil sige over 1600 px*/
 @media screen and (min-width: 1280px){

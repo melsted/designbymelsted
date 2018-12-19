@@ -121,14 +121,12 @@
 	.show {
     	display: block;
 	}
-
 	/*Styling af søgefunktionsknappen - tip: det er den som indeholder et forstørrelsesglas */
 	.search-lup {
     	width: 35px;
     	height: auto;
     	float: right;
 	}
-
 	/*Styling af søgefeltet og søgknappen*/
 	.search-form {
     	margin: 2px;
@@ -152,12 +150,70 @@
 		margin-right: 8px;
 	}
 
+/*styling af indhold*/
+.overskrift{
+	font-family: lato, sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	color: #414040;
+	position: absolute;
+	left: 42%;
+	top: 20%;
+}
+p{
+	font-family: lato, sans-serif;
+	color: #414040;
+	width: 30vw;
+	padding: 0px;
+	border: none;
+	margin: 0px;
+}
+.boks{
+	width: 30vw;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	right: 34vw;
+	top: 35%;
+	margin-bottom: 2vh;
+	border: 2px solid #717070;
+	padding: 20px;
+}
+.brev{
+	width: 150px;
+	height: auto;
+}
+.mail{
+	font-family: lato, sans-serif;
+	color: #414040;
+}
+input{
+	font-family: lato, sans-serif;
+	color: #414040;
+	font-size: 0.8125em;
+	width: 20vw;
+	border: 1px solid #717070;
+}
+textarea{
+	font-family: lato, sans-serif;
+	color: #414040;
+	font-size: 0.8125em;
+	width: 20vw;
+	height: 8vw;
+	border: 1px solid #717070;
+}
+label{
+	font-family: lato, sans-serif;
+	color: #414040;
+}
+
 /*Desktop version - det vil sige over 1600 px*/
 @media screen and (min-width: 1200px){
 		body{
 		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 1220px 580px;
 		width: 100vw;
 		height: 100vh;
@@ -222,6 +278,7 @@
 		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 1220px 580px;
 		width: 100vw;
 		height: 100vh;
@@ -286,7 +343,8 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-attachment: fixed;
+		background-size: 650px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -341,6 +399,9 @@
 		display: flex;
 		left: 1vw;
 		top: 4.4vh;
+	}
+	.overskrift{
+		left: 40%;
 	}
 }
 /*Landscape version one - det vil sige under 808 px*/
@@ -349,7 +410,8 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-attachment: fixed;
+		background-size: 650px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -404,6 +466,9 @@
 		display: flex;
 		left: 1vw;
 		top: 4.4vh;
+	}
+	.overskrift{
+		left: 38%;
 	}
 }
 /*Tablet version - det vil sige under 768 px men over 576 px*/
@@ -413,7 +478,8 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 600px 508px;
+		background-attachment: fixed;
+		background-size: 600px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -447,6 +513,9 @@
 		margin-top: 2.7vh;
 		margin-left: 9.5vw;
 	}
+	.overskrift{
+		left: 34.5%;
+	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
 @media screen and (min-width: 480px) and (max-width: 575px){
@@ -455,7 +524,8 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 450px 508px;
+		background-attachment: fixed;
+		background-size: 450px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -486,6 +556,15 @@
 	.lup-picturebox:hover, .burgermenu:hover{
 		background-color: rgba(131, 0, 0, 0.3);
 	}
+	.overskrift{
+		left: 22%;
+	}
+	.boks{
+		width: 40vw;
+	}
+	input, textarea{
+		width: 30vw;
+	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
 @media screen and (max-width: 479px){
@@ -494,6 +573,7 @@
 		background-image: url("../images/baggrunde/iphone-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 400px 500px;
 		width: 100vw;
 		height: 100vh;
@@ -522,5 +602,15 @@
 	}
 	.burgermenu{
 		right: 2vw;
+	}
+	.overskrift{
+		left: 28%;
+	}
+	.boks{
+		width: 50vw;
+		right: 16vw;
+	}
+	input, textarea{
+		width: 40vw;
 	}
 }
