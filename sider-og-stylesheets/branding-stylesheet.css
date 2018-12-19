@@ -78,7 +78,7 @@
 		/*Overvej float:right*/
 	}
 	.burger-content a:hover{
-		Background-color: rgba(83, 82, 82, 0.3); 
+		background-color: rgba(131, 0, 0, 0.3); 
 	}
 	.burgermenu:hover .burger-content{
 		display:inline-block;
@@ -588,6 +588,9 @@
 	.soegefelt{
 		display: contents;
 	}
+	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
 	/*usynliggør streg og subnavigation*/
 	.streg{
 		display: none;
@@ -643,6 +646,9 @@
 		margin-top: 0.5vh;
 		margin-right: 4vw;
 	}
+	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
 	.burgermenu{
 		top: 1vh;
 	}
@@ -689,5 +695,8 @@
 	}
 	.lup-picturebox{
 		margin-right: 5vw;
+	}
+	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
 	}
 }

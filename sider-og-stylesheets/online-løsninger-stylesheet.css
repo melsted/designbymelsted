@@ -78,7 +78,7 @@
 		/*Overvej float:right*/
 	}
 	.burger-content a:hover{
-		Background-color: rgba(83, 82, 82, 0.3); 
+		background-color: rgba(131, 0, 0, 0.3); 
 	}
 	.burgermenu:hover .burger-content{
 		display:inline-block;
@@ -602,6 +602,9 @@
 	.lup-picturebox{
 		margin-right: 4vw;
 	}
+	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
 @media screen and (min-width: 480px) and (max-width: 575px){
@@ -648,6 +651,9 @@
 	.lup-picturebox{
 		margin-right: 4vw;
 	}
+	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
 @media screen and (max-width: 479px){
@@ -680,7 +686,14 @@
 		font-size: 2.5em;
 		left: 18%
 	}
+	.burgermenu{
+		right: 2vw;
+	}
 	.lup-picturebox{
 		margin-right: 4vw;
+		width: inherit;
+	}
+	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
 	}
 }

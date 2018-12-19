@@ -78,7 +78,7 @@
 		/*Overvej float:right*/
 	}
 	.burger-content a:hover{
-		Background-color: rgba(83, 82, 82, 0.3); 
+		background-color: rgba(131, 0, 0, 0.3); 
 	}
 	.burgermenu:hover .burger-content{
 		display:inline-block;
@@ -121,14 +121,12 @@
 	.show {
     	display: block;
 	}
-
 	/*Styling af søgefunktionsknappen - tip: det er den som indeholder et forstørrelsesglas */
 	.search-lup {
     	width: 35px;
     	height: auto;
     	float: right;
 	}
-
 	/*Styling af søgefeltet og søgknappen*/
 	.search-form {
     	margin: 2px;
@@ -152,12 +150,112 @@
 		margin-right: 8px;
 	}
 
+/*Styling af grid og indhold - billeder*/
+.overskrift{
+	font-family: lato, sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	color: #414040;
+	position: absolute;
+	left: 42%;
+	top: 20%;
+}
+.beskrivelse{
+	font-family: lato, sans-serif;
+	font-size: 1.45em;
+	font-weight: bold;
+	text-align: center;
+	width: 75%;
+	color: #414040;
+	position: absolute;
+	left: 12.5%;
+	top: 35%;
+}
+
+.pic1{
+	width: 25vw;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	left: 6.25%;
+	top: 55%;
+	
+}
+.alley{
+	width: inherit;
+}
+.head{
+	position: relative;
+	font-family: lato, sans-serif;
+	color: #414040;
+}
+.p{
+	position: relative;
+	font-family: lato, sans-serif;
+	color: #414040;
+}
+
+.pic2{
+	width: 25vw;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	left: 37.50%;
+	top: 55%;
+}
+.sunrise{
+	width: inherit;
+}
+
+.pic3{
+	width: 25vw;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	left: 68.75%;
+	top: 55%;
+}
+.butterfly{
+	width: inherit;
+}
+
+.pic4{
+	width: 25vw;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	left: 6.25%;
+	top: 150%;
+}
+.regn{
+	width: inherit;
+}
+
+.pic5{
+	width: 25vw;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	left: 37.50%;
+	top: 150%;
+}
+.frost{
+	width: inherit;
+}
+
+.pic6{
+	width: 25vw;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	left: 68.75%;
+	top: 150%;
+}
+.chocolata{
+	width: inherit;
+}
+
 /*Desktop version - det vil sige over 1600 px*/
 @media screen and (min-width: 1280px){
 		body{
 		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 1220px 580px;
 		width: 100vw;
 		height: 100vh;
@@ -179,7 +277,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: inherit;
-		margin-right: 3vw;
+		margin-right: 2.5vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -244,6 +342,7 @@
 		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 1220px 580px;
 		width: 100vw;
 		height: 100vh;
@@ -260,12 +359,12 @@
 	/*Tilpasning af positioneringen af søgefeltet og logotypen(cph-type)*/
 	.cph-type{
 		margin-top: 3vh;
-		margin-left: 5vw;
+		margin-left: 5.5vw;
 	}
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: inherit;
-		margin-right: 3vw;
+		margin-right: 2vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -323,6 +422,10 @@
 		left: 1vw;
 		top: 4.3vh;
 	}
+	/*Tilrettelse af indhold*/
+	.pic1, .pic2, .pic3{
+		top: 60%;
+	}
 }
 /*Landscape version two - det vil sige under 1024 px*/
 @media screen and (min-width:808px) and (max-width: 1024px){
@@ -330,7 +433,8 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-attachment: fixed;
+		background-size: 650px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -351,6 +455,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: 100%;
+		margin-right: 0vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -406,6 +511,12 @@
 		left: 1vw;
 		top: 4.4vh;
 	}
+	.pic1, .pic2, .pic3{
+		top: 65%;
+	}
+	.pic4, .pic5, .pic6{
+		top: 145%;
+	}
 }
 /*Landscape version one - det vil sige under 808 px*/
 @media screen and (min-width:769px) and (max-width: 807px){
@@ -413,7 +524,8 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-attachment: fixed;
+		background-size: 650px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -434,6 +546,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: 100%;
+		margin-right: 0vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -489,6 +602,12 @@
 		left: 1vw;
 		top: 1.4vh;
 	}
+	.pic1, .pic2, .pic3{
+		top: 65%;
+	}
+	.pic4, .pic5, .pic6{
+		top: 140%;
+	}
 }
 /*Tablet version - det vil sige under 768 px men over 576 px*/
 @media screen and (min-width: 576px) and (max-width: 768px){
@@ -497,7 +616,8 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 600px 508px;
+		background-attachment: fixed;
+		background-size: 600px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -520,6 +640,18 @@
 		margin-top: 2.7vh;
 		margin-left: 9.5vw;
 	}
+	.lup-picturebox{
+		margin-right: 4vw;
+	}
+	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
+	.pic1, .pic2, .pic3{
+		top: 70%;
+	}
+	.pic4, .pic5, .pic6{
+		top: 145%;
+	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
 @media screen and (min-width: 480px) and (max-width: 575px){
@@ -528,7 +660,8 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 450px 508px;
+		background-attachment: fixed;
+		background-size: 450px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -553,9 +686,59 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.5vh;
+		margin-right: 4vw;
+	}
+	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
 	}
 	.burgermenu{
 		top: 1vh;
+	}
+	/*Tilrettelse af indhold*/
+	.overskrift{
+		left: 30%
+	}
+	.pic1{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 11.11%;
+		top: 80%;
+	}
+	.pic2{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 55.55%;
+		top: 80%;
+	}
+	.pic3{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 11.11%;
+		top: 145%;
+	}
+	.pic4{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 55.55%;
+		top: 145%;
+	}
+	.pic5{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 11.11%;
+		top: 217%;
+	}
+	.pic6{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 55.55%;
+		top: 217%;
 	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
@@ -565,6 +748,7 @@
 		background-image: url("../images/baggrunde/iphone-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 400px 500px;
 		width: 100vw;
 		height: 100vh;
@@ -583,5 +767,70 @@
 	.subnavigation{
 		display: none;
 	}
-	/*Der behøves ikke yderligere css koder til SmartPhone versionen da jeg har designet Mobile First som default*/
+	/*Tilrettelse af indhold*/
+	.lup-picturebox{
+		margin-right: 4vw;
+	}
+	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
+	.overskrift{
+		font-family: lato, sans-serif;
+		font-size: 2em;
+		font-weight: bold;
+		color: #414040;
+		position: absolute;
+		left: 30%;
+		top: 18%;
+	}
+		.beskrivelse{
+		font-size: 1em;
+		left: 12.5%;
+		top: 25%;
+	}
+	.head{
+		font-size: 1.2em;
+	}
+	.pic1{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 11.11%;
+		top: 52%;
+	}
+	.pic2{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 55.55%;
+		top: 52%;
+	}
+	.pic3{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 11.11%;
+		top: 110%;
+	}
+	.pic4{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 55.55%;
+		top: 110%;
+	}
+	.pic5{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 11.11%;
+		top: 175%;
+	}
+	.pic6{
+		width: 33.33vw;
+		background-color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		left: 55.55%;
+		top: 175%;
+	}
 }
