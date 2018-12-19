@@ -121,14 +121,12 @@
 	.show {
     	display: block;
 	}
-
 	/*Styling af søgefunktionsknappen - tip: det er den som indeholder et forstørrelsesglas */
 	.search-lup {
     	width: 35px;
     	height: auto;
     	float: right;
 	}
-
 	/*Styling af søgefeltet og søgknappen*/
 	.search-form {
     	margin: 2px;
@@ -152,12 +150,59 @@
 		margin-right: 8px;
 	}
 
+/*Styling af grid og indhold*/
+.overskrift{
+	font-family: lato, sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	color: #414040;
+	position: absolute;
+	left: 42%;
+	top: 20%;
+}
+.myhdiv{
+	width: 66.66vw;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	right: 16.6%;
+	top: 45%;
+	margin-bottom: 2vh;
+}
+.forside{
+	border: 2px solid #717070;
+	position: relative;
+	left: 39%;
+	width: 21vw;
+	height: auto;
+}
+.mhbolig{
+	font-family: lato, sans-serif;
+	color: #414040;
+}
+.myhapp{
+	font-family: lato, sans-serif;
+	color: #414040;
+}
+.myhoprindelig{
+	font-family: lato, sans-serif;
+	font-weight: 600;
+	color: #414040;
+}
+.myhforbedret{
+	font-family: lato, sans-serif;
+	font-weight: 600;
+	color: #414040;
+}
+
+
 /*Desktop version - det vil sige over 1600 px*/
 @media screen and (min-width: 1280px){
 		body{
 		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 1220px 580px;
 		width: 100vw;
 		height: 100vh;
@@ -244,6 +289,7 @@
 		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 1220px 580px;
 		width: 100vw;
 		height: 100vh;
@@ -265,7 +311,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: inherit;
-		margin-right: 3vw;
+		margin-right: 2vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -330,7 +376,8 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-attachment: fixed;
+		background-size: 650px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -350,6 +397,7 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.2vh;
+		margin-right: 0vw;
 		width: 100%;
 	}
 	.lup-picturebox:hover{
@@ -406,6 +454,10 @@
 		left: 1vw;
 		top: 4.4vh;
 	}
+	/*rettelse af indhold*/
+	.overskrift{
+		left: 40%;
+	}
 }
 /*Landscape version one - det vil sige under 808 px*/
 @media screen and (min-width:769px) and (max-width: 807px){
@@ -413,7 +465,8 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-attachment: fixed;
+		background-size: 650px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -433,6 +486,7 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.2vh;
+		margin-right: 0vw;
 		width: 100%;
 	}
 	.lup-picturebox:hover{
@@ -497,7 +551,8 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 600px 508px;
+		background-attachment: fixed;
+		background-size: 600px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -520,6 +575,13 @@
 		margin-top: 2.7vh;
 		margin-left: 9.5vw;
 	}
+	.lup-picturebox{
+		margin-right: 4vw;
+	}
+	/*tilpasning af indhold*/
+	.overskrift{
+		left: 35%;
+	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
 @media screen and (min-width: 480px) and (max-width: 575px){
@@ -528,7 +590,8 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 450px 508px;
+		background-attachment: fixed;
+		background-size: 450px 492px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -553,9 +616,14 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.5vh;
+		margin-right: 4vw;
 	}
 	.burgermenu{
 		top: 1vh;
+	}
+	/*tilpasning af indhold*/
+	.overskrift{
+		left: 30%;
 	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
@@ -565,6 +633,7 @@
 		background-image: url("../images/baggrunde/iphone-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 400px 500px;
 		width: 100vw;
 		height: 100vh;
@@ -583,5 +652,11 @@
 	.subnavigation{
 		display: none;
 	}
-	/*Der behøves ikke yderligere css koder til SmartPhone versionen da jeg har designet Mobile First som default*/
+	/*tilpasning af indhold*/
+	.lup-picturebox{
+		margin-right: 4vw;
+	}
+	.overskrift{
+		left: 25%;
+	}
 }

@@ -152,6 +152,164 @@
 		margin-right: 8px;
 	}
 
+/*Styling af grid og dets indhold*/
+	/*Portfolio opbyning*/
+.portfolio{
+	width: 16.66vw;
+	height: 16.66vh;
+	outline: 3px solid #717070;
+	background: white;
+	position: absolute;
+	top: 25vh;
+}
+.portfolio:hover{
+	border: 1px solid #330000;
+}
+.screenshot{
+	width: 11vw;
+	height: 12vh;
+	position: relative;
+	left: 2.8vw;
+	top: 0.5vh;
+	border: 1px solid #717070;
+}
+.p-link{
+	font-family: raleway, sans-serif;
+	font-size: 0.8125em;
+	text-decoration: none;
+	font-weight: 700;
+	color: #414040;
+	position: relative;
+	display: inline-flex;
+	left: 3.8vw;
+}
+
+	/*Branding*/
+.brands{
+	width: 16.66vw;
+	height: 33.33vh;
+	outline: 3px solid #717070;
+	background: white;
+	position: absolute;
+	top: 25vh;
+}
+.brands:hover{
+	border: 1px solid #330000;
+}
+.m{
+	width: 12vw;
+	height: 28vh;
+	position: relative;
+	left: 2.1vw;
+	top: 0.5vh;
+	border: 1px solid #717070;
+}
+.b-link{
+	font-family: raleway, sans-serif;
+	font-size: 0.8125em;
+	text-decoration: none;
+	font-weight: 700;
+	color: #414040;
+	position: relative;
+	display: inline-flex;
+	left: 6.0vw;
+	top: 0.5vh;
+}
+
+	/*Online løsninger*/
+.solutions{
+	width: 33.33vw;
+	height: 16.66vh;
+	outline: 3px solid #717070;
+	background: white;
+	position: absolute;
+	top: 25vh;
+}
+.solutions:hover{
+	border: 1px solid #330000;
+}
+.sweetbot{
+	width: 26vw;
+	height: 12vh;
+	position: relative;
+	left: 3.3vw;
+	top: 0.5vh;
+	border: 1px solid #717070;
+}
+.o-link{
+	font-family: raleway, sans-serif;
+	font-size: 0.8125em;
+	text-decoration: none;
+	font-weight: 700;
+	color: #414040;
+	position: relative;
+	display: inline-flex;
+	left: 12.5vw;
+	top: 0.2vh;
+}
+
+	/*Fotografier*/
+.fotografi{
+	width: 16.66vw;
+	height: 16.66vh;
+	outline: 3px solid #717070;
+	background: white;
+	position: absolute;
+	top: 68.88vh;
+}
+.fotografi:hover{
+	border: 1px solid #330000;
+}
+.kamera{
+	width: 7.5vw;
+	height: 12vh;
+	position: relative;
+	left: 5vw;
+	top: 0.5vh;
+}
+.f-link{
+	font-family: raleway, sans-serif;
+	font-size: 0.8125em;
+	text-decoration: none;
+	font-weight: 700;
+	color: #414040;
+	position: relative;
+	display: inline-flex;
+	right: 2vw;
+	top: 3.2vh;
+}
+
+	/*Applikationer*/
+.applikation{
+	width: 16.66vw;
+	height: 33.33vh;
+	outline: 3px solid #717070;
+	background-color: white; 
+	position: absolute;
+	top: 51.88vh;
+}
+.applikation:hover{
+	border: 1px solid #330000;
+}
+.myhome{
+	width: 11vw;
+	height: 28vh;
+	position: relative;
+	left: 2.8vw;
+	top: 0.5vh;
+	border: 1px solid #717070;
+}
+.a-link{
+	font-family: raleway, sans-serif;
+	font-size: 0.8125em;
+	text-decoration: none;
+	font-weight: 700;
+	color: #414040;
+	position: relative;
+	display: inline-flex;
+	left: 5.2vw;
+}
+
 /*Desktop version - det vil sige over 1600 px*/
 @media screen and (min-width: 1280px){
 		body{
@@ -406,6 +564,13 @@
 		left: 1vw;
 		top: 4.4vh;
 	}
+	/*Tilpasning af gridet på siden*/
+	.p-link{
+		left: 2.5vw;
+	}
+	.a-link{
+		left: 4.5vw;
+	}
 }
 /*Landscape version one - det vil sige under 808 px*/
 @media screen and (min-width:769px) and (max-width: 807px){
@@ -489,6 +654,21 @@
 		left: 1vw;
 		top: 1.4vh;
 	}
+	.b-link{
+		left: 5vw;
+	}
+	.f-link{
+		right: 3vw;
+	}
+	.a-link{
+		left: 3.5vw
+	}
+	.p-link{
+		left: 1vw;
+	}
+	.o-link{
+		left: 11vw;
+	}
 }
 /*Tablet version - det vil sige under 768 px men over 576 px*/
 @media screen and (min-width: 576px) and (max-width: 768px){
@@ -496,6 +676,7 @@
 	body{
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
+		background-attachment: fixed;
 		background-position: bottom left;
 		background-size: 600px 508px;
 		width: 100vw;
@@ -514,6 +695,7 @@
 	}
 	.lup-picturebox{
 		width: inherit;
+		margin-right: 4vw;
 	}
 	.burgermenu{
 		right: 2vw;
@@ -530,6 +712,91 @@
 		margin-top: 2.7vh;
 		margin-left: 9.5vw;
 	}
+	/*Tilpasning af grid*/
+	.portfolio{
+		right: 12vw;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.screenshot{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.p-link{
+		font-size: 1.2em;
+		top: 5vh;
+		left: 2vw;
+	}
+	.brands{
+		left: 12vw;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.m{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.b-link{
+		font-size: 1.2em;
+		top: 5vh;
+		left: 10vw;
+	}
+	.applikation{
+		left: 12vw;
+		top: 64vh;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.myhome{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.a-link{
+		font-size: 1.2em;
+		top: 5vh;
+		left: 7vw;
+	}
+	.fotografi{
+		right: 12vw;
+		top: 64vh;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.kamera{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.f-link{
+		font-size: 1.2em;
+		top: 5vh;
+		left: 8vw;
+	}
+	.solutions{
+		left: 12vw;
+		top: 103vh;
+		width: 74vw;
+		height: 33.33vh;
+		margin-bottom: 2vh;
+	}
+	.sweetbot{
+		width: 70vw;
+		height: 20vh;
+		left: 2vw;
+		top: 2vh;
+	}
+	.o-link{
+		font-size: 1.2em;
+		top: 5vh;
+		left: 24vw;
+	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
 @media screen and (min-width: 480px) and (max-width: 575px){
@@ -538,6 +805,7 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 450px 508px;
 		width: 100vw;
 		height: 100vh;
@@ -572,6 +840,91 @@
 	.lup-picturebox:hover, .burgermenu:hover{
 		background-color: rgba(131, 0, 0, 0.3);
 	}
+	/*Tilpasning af grid*/
+	.portfolio{
+		right: 12vw;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.screenshot{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.p-link{
+		font-size: 1em;
+		top: 4vh;
+		left: 2.5vw;
+	}
+	.brands{
+		left: 12vw;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.m{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.b-link{
+		font-size: 1.2em;
+		top: 3vh;
+		left: 10vw;
+	}
+	.applikation{
+		left: 12vw;
+		top: 64vh;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.myhome{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.a-link{
+		font-size: 1.2em;
+		top: 3vh;
+		left: 6vw;
+	}
+	.fotografi{
+		right: 12vw;
+		top: 64vh;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.kamera{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.f-link{
+		font-size: 1.2em;
+		top: 3vh;
+		left: 7.5vw;
+	}
+	.solutions{
+		left: 12vw;
+		top: 103vh;
+		width: 74vw;
+		height: 33.33vh;
+		margin-bottom: 2vh;
+	}
+	.sweetbot{
+		width: 70vw;
+		height: 20vh;
+		left: 2vw;
+		top: 2vh;
+	}
+	.o-link{
+		font-size: 1.2em;
+		top: 3vh;
+		left: 24vw;
+	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
 @media screen and (max-width: 479px){
@@ -580,6 +933,7 @@
 		background-image: url("../images/baggrunde/iphone-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 400px 500px;
 		width: 100vw;
 		height: 100vh;
@@ -604,8 +958,95 @@
 	}
 	.lup-picturebox{
 		width: inherit;
+		margin-right: 5vw;
 	}
 	.burgermenu{
 		right: 2vw;
+	}
+	/*Tilpasning af grid*/
+	.portfolio{
+		right: 12vw;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.screenshot{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.p-link{
+		font-size: 1.2em;
+		text-align: center;
+		top: 3vh;
+		left: 1vw;
+	}
+	.brands{
+		left: 12vw;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.m{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.b-link{
+		font-size: 1.2em;
+		top: 5vh;
+		left: 7vw;
+	}
+	.applikation{
+		left: 12vw;
+		top: 64vh;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.myhome{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.a-link{
+		font-size: 1.2em;
+		top: 5vh;
+		left: 3vw;
+	}
+	.fotografi{
+		right: 12vw;
+		top: 64vh;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.kamera{
+		width: 30vw;
+		height: 20vh;
+		left: 1.5vw;
+		top: 2vh;
+	}
+	.f-link{
+		font-size: 1.2em;
+		top: 5vh;
+		left: 5vw;
+	}
+	.solutions{
+		left: 12vw;
+		top: 103vh;
+		width: 74vw;
+		height: 33.33vh;
+		margin-bottom: 2vh;
+	}
+	.sweetbot{
+		width: 70vw;
+		height: 20vh;
+		left: 2vw;
+		top: 2vh;
+	}
+	.o-link{
+		font-size: 1.2em;
+		top: 5vh;
+		left: 20vw;
 	}
 }
