@@ -159,12 +159,23 @@
 	left: 35%;
 	top: 20%;
 }
+.underskrift{
+	font-family: lato, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: #414040;
+	position: absolute;
+	left: 39%;
+	top: 30%;
+}
 .boks{
 	width: 75vw;
 	height: auto;
 	background-color: rgba(255, 255, 255, 0.5);
 	position: absolute;
 	left: 12%;
+	top: 40%;
+	margin-bottom: 2vh;
 }
 .skrift{
 	font-family: lato, sans-serif;
@@ -178,6 +189,9 @@
 	font-family: lato, sans-serif;
 	color: #414040;
 }
+.link:hover{
+	font-weight: bold;
+}
 
 /*Desktop version - det vil sige over 1600 px*/
 @media screen and (min-width: 1280px){
@@ -185,6 +199,7 @@
 		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 1220px 580px;
 		width: 100vw;
 		height: 100vh;
@@ -271,6 +286,7 @@
 		background-image: url("../images/baggrunde/laptop-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 1220px 580px;
 		width: 100vw;
 		height: 100vh;
@@ -292,7 +308,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: inherit;
-		margin-right: 3vw;
+		margin-right: 2vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -357,7 +373,8 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-attachment: fixed;
+		background-size: 650px 484px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -378,6 +395,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: 100%;
+		margin-right: 0vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -440,7 +458,8 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-attachment: fixed;
+		background-size: 650px 482px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -461,6 +480,7 @@
 	.lup-picturebox{
 		margin-top: 0.2vh;
 		width: 100%;
+		margin-right: 0vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -516,6 +536,13 @@
 		left: 1vw;
 		top: 1.4vh;
 	}
+	/*Rettelse af overskrift og underskrift*/
+	.overskrift{
+		left: 28%;
+	}
+	.underskrift{
+		left: 33%;
+	}
 }
 /*Tablet version - det vil sige under 768 px men over 576 px*/
 @media screen and (min-width: 576px) and (max-width: 768px){
@@ -524,7 +551,8 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 600px 508px;
+		background-attachment: fixed;
+		background-size: 600px 482px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -534,6 +562,16 @@
 	}
 	.soegefelt{
 		display: contents;
+	}
+	.lup-picturebox{
+		margin-right: 4vw;
+		width: inherit;
+	}
+	.burgermenu{
+		right: 2vw;
+	}
+	.lup-picturebox:hover, .burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
 	}
 	/*usynliggør streg og subnavigation*/
 	.streg{
@@ -547,6 +585,15 @@
 		margin-top: 2.7vh;
 		margin-left: 9.5vw;
 	}
+	/*Rettelse af overskrift og underskrift*/
+	.overskrift{
+		left: 25%;
+		font-size: 2.5em;
+	}
+	.underskrift{
+		left: 30%;
+		font-size: 1.5em;
+	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
 @media screen and (min-width: 480px) and (max-width: 575px){
@@ -555,7 +602,8 @@
 		background-image: url("../images/baggrunde/tablet-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 450px 508px;
+		background-attachment: fixed;
+		background-size: 450px 482px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -580,9 +628,24 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.5vh;
+		margin-right: 4vw;
+		width: inherit;
 	}
 	.burgermenu{
 		top: 1vh;
+		right: 2vw;
+	}
+	.lup-picturebox:hover, .burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
+	/*Rettelse af overskrift og underskrift*/
+	.overskrift{
+		left: 15%;
+		font-size: 2.5em;
+	}
+	.underskrift{
+		left: 27%;
+		font-size: 1.5em;
 	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
@@ -592,6 +655,7 @@
 		background-image: url("../images/baggrunde/iphone-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
+		background-attachment: fixed;
 		background-size: 400px 500px;
 		width: 100vw;
 		height: 100vh;
@@ -603,6 +667,16 @@
 	.soegefelt{
 		display: contents;
 	}
+	.lup-picturebox{
+		margin-right: 4vw;
+		width:inherit
+	}
+	.burgermenu{
+		right: 2vw;
+	}
+	.lup-picturebox:hover, .burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
 	/*usynliggør streg og subnavigation*/
 	.streg{
 		display: none;
@@ -610,5 +684,13 @@
 	.subnavigation{
 		display: none;
 	}
-	/*Der behøves ikke yderligere css koder til SmartPhone versionen da jeg har designet Mobile First som default*/
+	/*Rettelse af overskrift og underskrift*/
+	.overskrift{
+		left: 10%;
+		font-size: 2.3em;
+	}
+	.underskrift{
+		left: 17%;
+		font-size: 1.7em;
+	}
 }

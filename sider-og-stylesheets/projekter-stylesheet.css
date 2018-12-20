@@ -156,20 +156,20 @@
 	/*Portfolio opbyning*/
 .portfolio{
 	width: 16.66vw;
-	height: 16.66vh;
+	height: 33.33vh;
 	outline: 3px solid #717070;
 	background: white;
 	position: absolute;
 	top: 25vh;
 }
 .portfolio:hover{
-	border: 1px solid #330000;
+	border: 1px solid #717070;
 }
 .screenshot{
-	width: 11vw;
-	height: 12vh;
+	width: 12vw;
+	height: 28vh;
 	position: relative;
-	left: 2.8vw;
+	left: 2.3vw;
 	top: 0.5vh;
 	border: 1px solid #717070;
 }
@@ -194,7 +194,7 @@
 	top: 25vh;
 }
 .brands:hover{
-	border: 1px solid #330000;
+	border: 1px solid #717070;
 }
 .m{
 	width: 12vw;
@@ -212,27 +212,27 @@
 	color: #414040;
 	position: relative;
 	display: inline-flex;
-	left: 6.0vw;
+	left: 6.5vw;
 	top: 0.5vh;
 }
 
 	/*Online løsninger*/
 .solutions{
-	width: 33.33vw;
-	height: 16.66vh;
+	width: 16.66vw;
+	height: 33.33vh;
 	outline: 3px solid #717070;
 	background: white;
 	position: absolute;
 	top: 25vh;
 }
 .solutions:hover{
-	border: 1px solid #330000;
+	border: 1px solid #717070;
 }
 .sweetbot{
-	width: 26vw;
-	height: 12vh;
+	width: 12vw;
+	height: 28vh;
 	position: relative;
-	left: 3.3vw;
+	left: 2.3vw;
 	top: 0.5vh;
 	border: 1px solid #717070;
 }
@@ -244,27 +244,27 @@
 	color: #414040;
 	position: relative;
 	display: inline-flex;
-	left: 12.5vw;
+	left: 4.5vw;
 	top: 0.2vh;
 }
 
 	/*Fotografier*/
 .fotografi{
 	width: 16.66vw;
-	height: 16.66vh;
+	height: 33.33vh;
 	outline: 3px solid #717070;
 	background: white;
 	position: absolute;
 	top: 68.88vh;
 }
 .fotografi:hover{
-	border: 1px solid #330000;
+	border: 1px solid #717070;
 }
 .kamera{
-	width: 7.5vw;
-	height: 12vh;
+	width: 15vw;
+	height: 28vh;
 	position: relative;
-	left: 5vw;
+	left: 1vw;
 	top: 0.5vh;
 }
 .f-link{
@@ -275,8 +275,8 @@
 	color: #414040;
 	position: relative;
 	display: inline-flex;
-	right: 2vw;
-	top: 3.2vh;
+	left: 5.5vw;
+	top: 0.5vh;
 }
 
 	/*Applikationer*/
@@ -286,10 +286,10 @@
 	outline: 3px solid #717070;
 	background-color: white; 
 	position: absolute;
-	top: 51.88vh;
+	top: 68.88vh;
 }
 .applikation:hover{
-	border: 1px solid #330000;
+	border: 1px solid #717070;
 }
 .myhome{
 	width: 11vw;
@@ -488,7 +488,7 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-size: 650px 502px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -578,7 +578,7 @@
 		background-image: url("../images/baggrunde/tablet-landscape-baggrund.jpg");
 		background-repeat: no-repeat;
 		background-position: bottom left;
-		background-size: 650px 508px;
+		background-size: 650px 501px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -598,7 +598,8 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.2vh;
-		width: 100%;
+		width: inherit;
+		margin-right: 0vw;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
@@ -678,7 +679,7 @@
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: bottom left;
-		background-size: 600px 508px;
+		background-size: 600px 502px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -713,36 +714,36 @@
 		margin-left: 9.5vw;
 	}
 	/*Tilpasning af grid*/
-	.portfolio{
+	.brands{
 		right: 12vw;
 		width: 33.33vw;
 		height: 33.33vh;
 	}
-	.screenshot{
-		width: 30vw;
-		height: 20vh;
-		left: 1.5vw;
+	.m{
+		width: 20vw;
+		height: 25vh;
+		left: 6.5vw;
 		top: 2vh;
 	}
 	.p-link{
-		font-size: 1.2em;
-		top: 5vh;
+		font-size: 1em;
+		top: 2vh;
 		left: 2vw;
 	}
-	.brands{
+	.portfolio{
 		left: 12vw;
 		width: 33.33vw;
 		height: 33.33vh;
 	}
-	.m{
-		width: 30vw;
-		height: 20vh;
-		left: 1.5vw;
+	.screenshot{
+		width: 20vw;
+		height: 25vh;
+		left: 6.5vw;
 		top: 2vh;
 	}
 	.b-link{
 		font-size: 1.2em;
-		top: 5vh;
+		top: 2vh;
 		left: 10vw;
 	}
 	.applikation{
@@ -752,15 +753,15 @@
 		height: 33.33vh;
 	}
 	.myhome{
-		width: 30vw;
-		height: 20vh;
-		left: 1.5vw;
+		width: 20vw;
+		height: 25vh;
+		left: 6.5vw;
 		top: 2vh;
 	}
 	.a-link{
 		font-size: 1.2em;
-		top: 5vh;
-		left: 7vw;
+		top: 2.5vh;
+		left: 9vw;
 	}
 	.fotografi{
 		right: 12vw;
@@ -769,33 +770,33 @@
 		height: 33.33vh;
 	}
 	.kamera{
-		width: 30vw;
-		height: 20vh;
-		left: 1.5vw;
+		width: 20vw;
+		height: 23vh;
+		left: 7.5vw;
 		top: 2vh;
 	}
 	.f-link{
 		font-size: 1.2em;
 		top: 5vh;
-		left: 8vw;
+		left: 9vw;
 	}
 	.solutions{
 		left: 12vw;
 		top: 103vh;
-		width: 74vw;
+		width: 33.33vw;
 		height: 33.33vh;
 		margin-bottom: 2vh;
 	}
 	.sweetbot{
-		width: 70vw;
-		height: 20vh;
-		left: 2vw;
+		width: 20vw;
+		height: 25vh;
+		left: 6.5vw;
 		top: 2vh;
 	}
 	.o-link{
 		font-size: 1.2em;
-		top: 5vh;
-		left: 24vw;
+		top: 2.5vh;
+		left: 6.5vw;
 	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
@@ -806,7 +807,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 450px 508px;
+		background-size: 450px 480px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -832,6 +833,7 @@
 	.lup-picturebox{
 		margin-top: 0.5vh;
 		width: inherit;
+		margin-right: 4vw;
 	}
 	.burgermenu{
 		top: 1vh;
@@ -841,37 +843,36 @@
 		background-color: rgba(131, 0, 0, 0.3);
 	}
 	/*Tilpasning af grid*/
-	.portfolio{
+	.brands{
 		right: 12vw;
 		width: 33.33vw;
 		height: 33.33vh;
 	}
-	.screenshot{
-		width: 30vw;
-		height: 20vh;
-		left: 1.5vw;
-		top: 2vh;
-	}
-	.p-link{
-		font-size: 1em;
-		top: 4vh;
-		left: 2.5vw;
-	}
-	.brands{
-		left: 12vw;
-		width: 33.33vw;
-		height: 33.33vh;
-	}
 	.m{
-		width: 30vw;
-		height: 20vh;
-		left: 1.5vw;
+		width: 20vw;
+		height: 25vh;
+		left: 6.5vw;
 		top: 2vh;
 	}
 	.b-link{
 		font-size: 1.2em;
+		top: 2.5vh;
+		left: 9vw;
+	}
+	.portfolio{
+		left: 12vw;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.screenshot{
+		width: 20vw;
+		height: 25vh;
+		left: 6.5vw;
+		top: 2vh;
+	}
+	.p-link{
+		font-size: 1em;
 		top: 3vh;
-		left: 10vw;
 	}
 	.applikation{
 		left: 12vw;
@@ -880,9 +881,9 @@
 		height: 33.33vh;
 	}
 	.myhome{
-		width: 30vw;
-		height: 20vh;
-		left: 1.5vw;
+		width: 20vw;
+		height: 25vh;
+		left: 6.5vw;
 		top: 2vh;
 	}
 	.a-link{
@@ -898,7 +899,7 @@
 	}
 	.kamera{
 		width: 30vw;
-		height: 20vh;
+		height: 25vh;
 		left: 1.5vw;
 		top: 2vh;
 	}
@@ -910,20 +911,20 @@
 	.solutions{
 		left: 12vw;
 		top: 103vh;
-		width: 74vw;
+		width: 33.33vw;
 		height: 33.33vh;
 		margin-bottom: 2vh;
 	}
 	.sweetbot{
-		width: 70vw;
-		height: 20vh;
-		left: 2vw;
+		width: 20vw;
+		height: 25vh;
+		left: 6.5vw;
 		top: 2vh;
 	}
 	.o-link{
 		font-size: 1.2em;
-		top: 3vh;
-		left: 24vw;
+		top: 2.5vh;
+		left: 3vw;
 	}
 }
 /*SmartPhone version - det vil sige under 480 px*/
@@ -964,38 +965,39 @@
 		right: 2vw;
 	}
 	/*Tilpasning af grid*/
-	.portfolio{
+	.brands{
 		right: 12vw;
 		width: 33.33vw;
 		height: 33.33vh;
 	}
-	.screenshot{
-		width: 30vw;
-		height: 20vh;
-		left: 1.5vw;
-		top: 2vh;
-	}
-	.p-link{
-		font-size: 1.2em;
-		text-align: center;
-		top: 3vh;
-		left: 1vw;
-	}
-	.brands{
-		left: 12vw;
-		width: 33.33vw;
-		height: 33.33vh;
-	}
 	.m{
-		width: 30vw;
+		width: 20vw;
 		height: 20vh;
-		left: 1.5vw;
+		left: 6.5vw;
 		top: 2vh;
 	}
 	.b-link{
 		font-size: 1.2em;
-		top: 5vh;
+		text-align: center;
+		top: 3vh;
 		left: 7vw;
+	}
+	.portfolio{
+		left: 12vw;
+		width: 33.33vw;
+		height: 33.33vh;
+	}
+	.screenshot{
+		width: 20vw;
+		height: 20vh;
+		left: 6.5vw;
+		top: 2vh;
+	}
+	.p-link{
+		font-size: 1.2em;
+		top: 3vh;
+		left: 0.5vw;
+		text-align: center;
 	}
 	.applikation{
 		left: 12vw;
@@ -1004,9 +1006,9 @@
 		height: 33.33vh;
 	}
 	.myhome{
-		width: 30vw;
+		width: 20vw;
 		height: 20vh;
-		left: 1.5vw;
+		left: 6.5vw;
 		top: 2vh;
 	}
 	.a-link{
@@ -1034,19 +1036,20 @@
 	.solutions{
 		left: 12vw;
 		top: 103vh;
-		width: 74vw;
+		width: 33.33vw;
 		height: 33.33vh;
 		margin-bottom: 2vh;
 	}
 	.sweetbot{
-		width: 70vw;
+		width: 20vw;
 		height: 20vh;
-		left: 2vw;
+		left: 6.5vw;
 		top: 2vh;
 	}
 	.o-link{
 		font-size: 1.2em;
-		top: 5vh;
-		left: 20vw;
+		top: 3vh;
+		left: 0.5vw;
+		text-align: center;
 	}
 }

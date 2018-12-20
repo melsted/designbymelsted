@@ -186,13 +186,14 @@
 }
 .myhoprindelig{
 	font-family: lato, sans-serif;
-	font-weight: 600;
 	color: #414040;
 }
 .myhforbedret{
 	font-family: lato, sans-serif;
-	font-weight: 600;
 	color: #414040;
+}
+.myhforbedret:hover, .myhoprindelig:hover{
+	font-weight: bold;
 }
 
 
@@ -377,7 +378,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 650px 492px;
+		background-size: 650px 484px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -456,7 +457,7 @@
 	}
 	/*rettelse af indhold*/
 	.overskrift{
-		left: 40%;
+		left: 38%;
 	}
 }
 /*Landscape version one - det vil sige under 808 px*/
@@ -466,7 +467,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 650px 492px;
+		background-size: 650px 482px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -543,6 +544,9 @@
 		left: 1vw;
 		top: 1.4vh;
 	}
+	.overskrift{
+		left: 37%;
+	}
 }
 /*Tablet version - det vil sige under 768 px men over 576 px*/
 @media screen and (min-width: 576px) and (max-width: 768px){
@@ -552,7 +556,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 600px 492px;
+		background-size: 600px 482px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -577,8 +581,15 @@
 	}
 	.lup-picturebox{
 		margin-right: 4vw;
+		width:inherit;
 	}
 	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
+	.burgermenu{
+		right: 2vw;
+	}
+	.burgermenu:hover{
 		background-color: rgba(131, 0, 0, 0.3);
 	}
 	/*tilpasning af indhold*/
@@ -594,7 +605,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 450px 492px;
+		background-size: 450px 482px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -620,12 +631,17 @@
 	.lup-picturebox{
 		margin-top: 0.5vh;
 		margin-right: 4vw;
+		width:inherit;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
 	}
 	.burgermenu{
 		top: 1vh;
+		right: 2vw;
+	}
+	.burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
 	}
 	/*tilpasning af indhold*/
 	.overskrift{
@@ -661,11 +677,21 @@
 	/*tilpasning af indhold*/
 	.lup-picturebox{
 		margin-right: 4vw;
+		width: inherit;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
 	}
+	.burgermenu{
+		right: 2vw;
+	}
+	.burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
 	.overskrift{
-		left: 25%;
+		left: 20%;
+	}
+	.myhdiv{
+		top: 35%;
 	}
 }

@@ -187,13 +187,14 @@
 }
 .sboprindelig{
 	font-family: lato, sans-serif;
-	font-weight: 600;
 	color: #414040;
 }
 .sbforbedret{
 	font-family: lato, sans-serif;
-	font-weight: 600;
 	color: #414040;
+}
+.sbforbedret:hover, .sboprindelig:hover{
+	font-weight: bold;
 }
 
 /*Desktop version - det vil sige over 1600 px*/
@@ -384,7 +385,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 650px 492px;
+		background-size: 650px 484px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -477,7 +478,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 650px 492px;
+		background-size: 650px 482px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -571,7 +572,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 600px 492px;
+		background-size: 600px 482px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -601,9 +602,16 @@
 	}
 	.lup-picturebox{
 		margin-right: 4vw;
+		width: inherit;
 	}
 	.lup-picturebox:hover{
 		background-color: rgba(131, 0, 0, 0.3);
+	}
+	.burgermenu:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
+	.burgermenu{
+		right: 2vw;
 	}
 }
 /*Mini tablet version - det vil sige under 575 px men over 480 px*/
@@ -614,7 +622,7 @@
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 450px 492px;
+		background-size: 450px 482px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -639,19 +647,22 @@
 	}
 	.lup-picturebox{
 		margin-top: 0.5vh;
+		width: inherit;
+		margin-right: 4vw;
 	}
 	.burgermenu{
 		top: 1vh;
+		right: 2vw;
 	}
 	/*Rettelse af indhold*/
 	.overskrift{
 		font-size: 2.5em;
 		left: 25%
 	}
-	.lup-picturebox{
-		margin-right: 4vw;
-	}
 	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
+	.burgermenu:hover{
 		background-color: rgba(131, 0, 0, 0.3);
 	}
 }
@@ -694,6 +705,9 @@
 		width: inherit;
 	}
 	.lup-picturebox:hover{
+		background-color: rgba(131, 0, 0, 0.3);
+	}
+	.burgermenu:hover{
 		background-color: rgba(131, 0, 0, 0.3);
 	}
 }

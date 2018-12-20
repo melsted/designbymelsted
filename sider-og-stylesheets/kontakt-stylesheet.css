@@ -206,6 +206,10 @@ label{
 	font-family: lato, sans-serif;
 	color: #414040;
 }
+.effect:hover{
+	border: 2px solid #717070;
+	font-weight: bold;
+}
 
 /*Desktop version - det vil sige over 1600 px*/
 @media screen and (min-width: 1200px){
@@ -344,7 +348,7 @@ label{
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 650px 492px;
+		background-size: 650px 485px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -411,7 +415,7 @@ label{
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 650px 492px;
+		background-size: 650px 486px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -479,7 +483,7 @@ label{
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 600px 492px;
+		background-size: 600px 484px;
 		width: 100vw;
 		height: 100vh;
 	}
@@ -525,7 +529,7 @@ label{
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-attachment: fixed;
-		background-size: 450px 492px;
+		background-size: 450px 484px;
 		width: 100vw;
 		height: 100vh;
 	}
